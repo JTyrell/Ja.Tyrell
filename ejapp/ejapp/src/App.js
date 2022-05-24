@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from './Comp/Navbar';
+import Navbar from './comp/Navbar';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Footer from './Comp/Footer';
-import Home from './Comp/pages/Home';
-import Trips from './Comp/pages/Trips';
-import Products from './Comp/pages/Products';
-import SignUp from './Comp/pages/SignUp';
+//import Footer from './comp/Footer';
+import Home from './comp/pages/Home';
+import Trips from './comp/pages/Trips';
+import Products from './comp/pages/Products';
+import SignUp from './comp/pages/SignUp';
 
 function App() {
   return (
@@ -15,13 +15,12 @@ function App() {
         <div>
         <Navbar />
           <Routes>
-            <Route path='/homes' exact component={Home} />
+            <Route path='/home' exact component={Home} />
             <Route path='/trips' component={Trips} />
             <Route path='/products' component={Products} />
             <Route path='/sign-up' component={SignUp} />
           </Routes>
-          <Footer />
-            </div>
+        </div>
       </Router>
     </>
   );
